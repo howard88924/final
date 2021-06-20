@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+	box-sizing: border-box;
+	font-family: Arial,Microsoft JhengHei;
+}
+body{
+  background-color: rgb(250, 243, 182);
+}
+a{
+	text-decoration: none;
+}
+.top{
+	height: 100px;
+	background-color: #fff;
+}
+.top ul{
+	display: flex;
+	width: 380px;
+	list-style: none;
+	text-align: center;
+	margin: auto;
+}
+.top ul li{
+	width: 100px;
+	line-height: 100px;
+
+}
+.top a{
+	color: #000;
+	font-size: 16px;
+}
+.top a:hover{
+	border-bottom: 1px solid #000;
+}
+
+  .img1{
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 375px;
+    position: absolute;
+  }
+  .img2{
+    width: 220px;
+    margin-left: 660px;
+    margin-top: 10px;
+    position: absolute;
+  }
+  .img3{
+    width: 220px;
+    margin-left: 980px;
+    margin-top: 10px;
+    position: absolute;
+  }
+  .img4{
+    width: 180px;
+    margin-left: 375px;
+    margin-top: 350px;
+    position: absolute;
+  }
+  .img5{
+    width: 200px;
+    margin-left: 680px;
+    margin-top: 350px;
+    position: absolute;
+  }
+  .img6{
+    width: 180px;
+    margin-left: 980px;
+    margin-top: 350px;
+    position: absolute;
+  }
+  .img7{
+    width: 180px;
+    margin-left: 1280px;
+    margin-top: 10px;
+    position: absolute;
+  }
+  .img8{
+    width: 150px;
+    margin-left: 1300px;
+    margin-top: 350px;
+    position: absolute;
+  }
+  .p1{
+    margin-top: 250px;
+    margin-left: 375px;
+    position: absolute;
+    font-family: "微軟正黑體";
+    font-size: 14px;
+    font-weight: bolder;
+    color: rgb(0, 110, 255);
+  }
+  .p2{
+    margin-top: 250px;
+    margin-left: 675px;
+    position: absolute;
+    font-family: "微軟正黑體";
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(0, 110, 255);
+  }
+  .p3{
+    margin-top: 250px;
+    margin-left: 990px;
+    position: absolute;
+    font-family: "微軟正黑體";
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(0, 110, 255);
+  }
+  .p4{
+    margin-top: 620px;
+    margin-left: 375px;
+    position: absolute;
+    font-family: "微軟正黑體";
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(0, 110, 255);
+  }
+  .p5{
+    margin-top: 620px;
+    margin-left: 690px;
+    position: absolute;
+    font-family: "微軟正黑體";
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(0, 110, 255);
+  }
+  .p6{
+    margin-top: 620px;
+    margin-left: 990px;
+    position: absolute;
+    font-family: "微軟正黑體";
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(0, 110, 255);
+  }
+  .p7{
+    margin-top: 250px;
+    margin-left: 1300px;
+    position: absolute;
+    font-family: "微軟正黑體";
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(0, 110, 255);
+  }
+  .p8{
+    margin-top: 620px;
+    margin-left: 1300px;
+    position: absolute;
+    font-family: "微軟正黑體";
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(0, 110, 255);
+  }

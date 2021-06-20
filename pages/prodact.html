@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shop</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/rwd7.css">
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+    <script src="../assets/js/Totop.js"></script>
+    <script src="../assets/js/view.js"></script>
+	<script>
+		(function(document) {
+  'use strict';
+
+
+  var List = (function(Arr) {
+
+    var input;
+
+  
+    function _onInputEvent(e) {
+      input = e.target;
+      var tables = document.getElementsByClassName(input.getAttribute('data-table'));
+      Arr.forEach.call(tables, function(table) {
+        Arr.forEach.call(table.tBodies, function(tbody) {
+          Arr.forEach.call(tbody.rows, _filter);
+        });
+      });
+    }
+
+    function _filter(row) {
+      var text = row.textContent.toLowerCase(), val = input.value.toLowerCase();
+      row.style.display = text.indexOf(val) === -1 ? 'none' : 'table-row';
+    }
+
+    return {
+
+      init: function() {
+        var inputs = document.getElementsByClassName('list');
+        Arr.forEach.call(inputs, function(input) {
+          input.oninput = _onInputEvent;
+        });
+      }
+    };
+  })(Array.prototype);
+
+  document.addEventListener('readystatechange', function() {
+    if (document.readyState === 'complete') {
+      List.init();
+    }
+  });
+
+})(document);
+	</script>
+  <style>
+  .prodact{
+    display: flex;
+  }
+  .contact{
+      margin-top: 1000px;
+    }
+  @media screen and (max-width: 768px){
+    .prodact{
+      display: block;
+      width: 90%;
+      margin-top: 300px;
+    }
+      .contact{
+       width: 100%;
+      margin-top: 4300px;
+    }
+   
+.contact div{
+  padding-top: 30px;
+  margin-left: 30px;
+  font-size: 16px;
+
+}
+
+.contact footer{
+  text-align: center;
+  line-height: 250px;
+}
+
+  }
+ 
+    
+  </style>
+</head>
+<body>
+<input type="checkbox" id="menu_control">
+    <div class="hbdiv">
+  <label for="menu_control" class="hb"></label>
+  </div>
+<a href="index.html" title=""><img src="../assets/img/logo.png" alt="" class="logo"></a>
+    <a href="##" class="toTop"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
+<div class="top">
+<ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="prodact.html"  style="border-bottom: 1px solid #222;">Shop</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+  <div class="all">
+  <div class="banner">
+    <img src="../assets/img/banner2.jpg" alt="" style="height: auto;">
+    <span>
+    <h1>Shop online</h1><br><br><br><br><br><br>
+    <p>瀏覽我們精選的高質量公仔，現在全館免運中！</p>
+    </span>
+  </div>
+  <div class="login" id="mao">
+  <ul>
+    <a href="signin.html#mao" title=""><li style="margin-left:0;"><i class="gg-reorder" style="margin-bottom: 25px;"></i>Track Orders</li></a>
+        <a href="signin.html#mao" title=""><li><i class="gg-heart"></i>Favorites</li></a>
+        <a href="shopbag.html#mao" title=""><li><i class="gg-shopping-bag" style="margin-bottom: 15px;"></i>Shopping Bag</li></a>
+        <a href="signin.html#mao" title=""><li><i class="gg-user" style="margin-bottom: 15px;"></i>Sign In</li></a>
+  </ul>
+  </div>
+  <style>
+ 
+  </style>
+  <div class="search"> 搜尋:<input type="search" class="list" data-table="order-table" placeholder="請輸入商品名稱" style="height: 30px;"></div>
+<div class="prodact" id="mao">
+	<div class="prodact-button">
+    <a href="prodact.html#mao" title=""><div  style="background: #333;color:#fff;">全部商品</div></a>
+    <a href="dragonball.html#mao" title=""><div>七龍珠</div></a>
+    <a href="naruto.html#mao" title=""><div>火影忍者</div></a>
+  </div>
+
+<table class="order-table">
+    <tr>
+    <td><a href="A.html#mao" title=""><img src="../assets/img/03.jpg" alt="" ></a></td>
+      <td>一番賞 A賞 孫悟空&弗利沙</td>
+      <td>NTD1500</td>
+    </tr>
+     <tr>
+    <td><a href="B.html#mao" title=""><img src="../assets/img/04.jpg" alt="" ></a></td>
+      <td>超藍悟空X超藍貝吉塔 合體必殺技</td>
+      <td>NTD990</td>
+    </tr> 
+     <tr>
+    <td><a href="C.html#mao" title=""><img src="../assets/img/06.jpg" alt="" ></a></td>
+      <td>一番賞 C賞 超布羅利</td>
+      <td>NTD1400</td>
+    </tr> 
+     <tr>
+    <td><a href="J.html#mao" title=""><img src="../assets/img/19.jpg" alt="" ></a></td>
+      <td> 宇智波佐助GK 终結之谷</td>
+      <td>NTD1600</td>
+    </tr>
+
+</table>
+
+<table class="order-table">
+    <tr>
+    <td><a href="D.html#mao" title=""><img src="../assets/img/07.jpg" alt="" ></a></td>
+      <td>熱銷！18號 景品</td>
+      <td>NTD370</td>
+    </tr>
+     <tr >
+    <td><a href="E.html#mao" title=""><img src="../assets/img/08.jpg" alt="" ></a></td>
+      <td>超賽悟吉塔 超級賽亞人狀態</td>
+      <td>NTD500</td>
+    </tr> 
+     <tr>
+    <td><a href="F.html#mao" title=""><img src="../assets/img/09.jpg" alt=""></a></td>
+      <td>grandista 悟空 自在極意兆型態</td>
+      <td>NTD600</td>
+    </tr> 
+     <tr>
+   <td><a href="K.html#mao" title=""><img src="../assets/img/27.jpg" alt="" ></a></td>
+      <td> 宇智波鼬GK 王座共鳴款</td>
+      <td>NTD11800</td>
+    </tr>
+
+</table>
+
+<table class="order-table">
+    <tr>
+    <td><a href="G.html#mao" title=""><img src="../assets/img/10.jpg" alt="" ></a></td>
+      <td>悟空&巴達克 合體龜派氣功波</td>
+      <td>NTD880</td>
+    </tr>
+     <tr>
+    <td><a href="H.html#mao" title=""><img src="../assets/img/11.jpg" alt="" ></a></td>
+      <td>悟空最強型態 自在極意功</td>
+      <td>NTD500</td>
+    </tr> 
+     <tr>
+    <td><a href="I.html#mao" title=""><img src="../assets/img/12.jpg" alt="" ></a></td>
+      <td>魔改超三悟空</td>
+      <td>NTD1300</td>
+    </tr> 
+     <tr>
+    <td><a href="L.html#mao" title=""><img src="../assets/img/28.jpg" alt="" ></a></td>
+      <td>六道鳴人GK 九喇嘛 </td>
+      <td>NTD10000</td>
+    </tr>
+
+</table>
+
+	 </div>
+   <div class="contact">
+  <div class="contact-div1">
+    <span>Customer Service</span><br><br>
+    <p>Email-XXXXX@gmail.com</p><br>
+    <p>Phone-09XX-XXX-XXX</p>
+    </div>
+    <footer>
+      ©My Hao Doll 2021 ALL RIGHTS RESERVED
+    </footer>
+  </div>
+  </div>
+</body>
+</html>

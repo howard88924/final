@@ -1,0 +1,248 @@
+*{
+	margin: 0;
+	height: 0;
+	font-family: sans-serif,Verdana ,Microsoft JhengHei;
+}
+.hb{
+	  display: none;
+      position: absolute;
+      height: 3px;
+      width: 28px;
+      background-color: #000;
+      top: 30px;
+      right:30px;
+      bottom: 0;
+      box-shadow: 0px 10px 0px #000,0px -10px 0px #000;
+      cursor: pointer;
+}
+.hbdiv{
+	width: 100%;
+	height: 30px;
+	background-color: #fff;
+	display: none;
+	
+}
+#menu_control{
+	opacity: 0;
+	position: absolute;
+	top: -100000;
+}
+@media screen and (max-width: 414px){
+	.logo{
+		width: 160px;
+		height: 40px;
+		top:10px;
+		z-index: 200;
+	}
+	.hb{
+		display: block;
+		z-index: 100;
+		box-shadow: 0px 10px 0px #000 ,0px -10px 0px #000;
+		cursor: pointer;
+	}
+	.hbdiv{
+	display: block;
+	height: 61px;
+		background-color: #fff;
+		z-index: 100;
+		
+}
+    #menu_control:checked ~ .top{
+    	top:55px;
+    	transition: .5s;
+    }
+	.all{
+		width: 100%;
+	}
+.top{
+	height: 25%;
+	background-color: #fff;
+	width:100%;
+	position: absolute;
+	top:-30%;
+	left: 0;
+	z-index: 100;
+}
+
+.top ul{
+	display: block;
+	width: 35%;
+	list-style: none;
+	text-align: center;
+	margin: auto;
+
+}
+.top ul li{
+	width: 100px;
+	margin-top: 10px;
+	margin-bottom: 50px;
+	line-height: 100px;
+}
+.top a{
+	color: #222;
+	font-size: 16px;
+}
+.top a:hover{
+	border-bottom: 1px solid #222;
+}
+.banner img{
+	width: 250%;
+	height: 110vh;
+	filter:brightness(.7);
+	display: block;
+	position: absolute;
+	top: 60px;
+	left: 0;
+	text-align: center;
+	opacity: 0;
+}
+.banner{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	height: 100vh;
+	background-image: url('../img/25.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.banner img{
+	width: 0px;
+	height: 0px;
+}
+.banner span{
+	color: rgba(252,236,210,1);
+	position: absolute;
+	top: 400px;
+	left: 10%;
+}
+.banner h1{
+	font-size: 48px;
+}
+.banner p{
+	font-size: 18px;
+	width: 200px;
+}
+
+
+.login{
+	margin-top: 40px;
+	width: 100%;
+	height: 180px;
+}
+
+.login a{
+	width: 110px;
+	margin-left: 0px;
+	height: 50px;
+	display: inline-block;
+	color: #555;
+	padding-bottom:20px;
+}
+.login a:hover{
+	color: #0080FF;
+	transition: .5s;
+
+}
+
+.login i{
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+
+.shopbag{
+	height: auto;
+	min-height: 800px;
+	width: 100%;
+	display: block;
+	padding: 30px;
+	box-sizing: border-box;
+}
+.shopbag img{
+	width: 70px;
+	height: 70px;
+}
+.shopbag h1{
+	margin-bottom: 50px;
+	font-size: 24px;
+	color: #222;
+
+}
+.shopbag a{
+	margin: 0 10px;
+	color: #aaa;
+	font-size: 16px;
+}
+
+.productimg{
+	display: flex;
+	width: 100%;
+	height: 300px;
+	flex-wrap: wrap;
+}
+.productimg img{
+	margin-top: 20px;
+	float: left;
+	margin: 20px;
+}
+.productimg p{
+	padding-top: 30px;
+	width: 100%;
+	margin-bottom: 50px;
+	font-size: 16px;
+
+}
+
+.productimg h6{
+	font-size: 18px;
+	color: #333;
+	margin-top:20px;
+}
+.productimg h5{
+	margin-top:20px;
+	font-size: 18px;
+	margin-right: 30px;
+	color: #0080ff;
+}
+.bagcheck{
+	margin-top: 450px;
+}
+.bagcheck h1{
+	text-align: center;
+	margin-bottom: 20px;
+}
+.bagcheck h4{
+	line-height: 1.6;
+}
+.bagcheck h5{
+	padding-top: 30px;
+	margin-bottom: 30px;
+	color: #222;
+	font-size: 24px;
+}
+.bagcheck input{
+	margin-top: 100px;
+	width: 90%;
+}
+
+
+.contact{
+	width: 100%;
+	height: 200px;
+	background-color: #222;
+	color: #fff;
+
+}
+.contact div{
+	padding-top: 30px;
+	margin-left: 30px;
+	font-size: 16px;
+
+}
+
+.contact footer{
+	text-align: center;
+	line-height: 250px;
+}
+
+}
